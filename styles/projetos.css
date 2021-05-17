@@ -1,0 +1,76 @@
+#projetos {
+  padding: 100px;
+  padding-top: 0;
+}
+
+details {
+  margin: 20px 0;
+}
+
+details summary {
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 14px;
+}
+
+details summary .nome {
+  display: flex;
+  justify-content: space-between;
+  color: #545457;
+  font-size: 32px;
+}
+
+details summary span {
+  background: #6FA9B3;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px;
+}
+
+details summary span:hover {
+  background: #71c0ce;
+}
+
+details summary .resumo {
+  color: #bbb;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+details .requisitos {
+  background: linear-gradient(#eee, #f8f8f8,#fff);
+  padding: 20px;
+}
+
+details .requisitos img {
+  width: 300px;
+}
+
+details .requisitos h3 {
+  color: #6FA9FF;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+details .requisitos ul {
+  list-style: none;
+  padding: 20px;
+}
+
+details .requisitos li {
+  color: #545457;
+  font-size: 18px;
+  padding: 4px 0;
+}
+
+@media (max-width: 800px) {
+  #projetos {
+    padding: 10px;
+  }
+}

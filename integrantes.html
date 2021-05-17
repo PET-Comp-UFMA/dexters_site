@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="icon" href="./assets/images/Logo Secundária 2 brancoc.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/integrantes.css">
+</head>
+<body>
+
+  <header>
+    <div class="logos">
+      <a href="./index.html"><img src="./assets/images/Logo Secundária 1c.png" alt="Logo Dexters" class="dexters-logo"></a>
+      <div class="divider"></div>
+      <img src="./assets/images/UFMA.png" alt="Logo UFMA" class="ufma-logo">
+    </div>
+    <nav id="nav-bar" class="overlay">
+      <img src="/assets/svg/close-24px.svg" alt="" class="close-btn" onclick="closeMenu()">
+      <div class="overlay-content">
+        <ul>
+          <li>
+            <button>
+              <a href="./index.html">Início</a>
+            </button>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="DropdownSobre()" class="dropbtn">
+                Conheça o Dexters
+                <span class="material-icons">
+                  arrow_drop_down
+                </span>
+              </button>
+              <div id="dropdown-sobre" class="dropdown-content-sobre">
+                <a href="./sobre.html">Sobre</a>
+                <a href="./integrantes.html">Integrantes</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button><a href="./publicacoes.html">Publicações</a></button>
+          </li>
+          <li>
+            <button><a href="./projetos.html">Projetos</a></button>
+          </li>
+          <li>
+            <button><a href="./noticias.html">Notícias</a></button>
+          </li>
+          <!-- <li>
+            <div class="dropdown">
+              <button onclick="DropdownProdutos()" class="dropbtn">
+                Produtos
+                <span class="material-icons">
+                  arrow_drop_down
+                </span>
+              </button>
+              <div id="dropdown-produtos" class="dropdown-content-produtos">
+                <a href="./eventos.html">Eventos</a>
+                <a href="./produtos-podcomp.html">PodCast</a>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+    <img src="/assets/svg/menu-24px.svg" alt="" class="open-btn" onclick="openMenu()">
+  </header>
+
+<div class="container">
+  <div class="section-header">
+    <h2>Integrantes</h2>
+  </div>
+
+
+  <div class="integrantes">
+    <div class="tutores">
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/lucho.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href="#abrirModal1"><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+        <div id="abrirModal1" class="modal">
+          <div class="modal-conteiner">
+            <figure class="modal-figure">
+              <img class="modal-img" src="./assets/images/imgTeste.jpg" alt="">
+            </figure>
+            <div class="modal-text">
+              <h4>Nome: <span>Luis Rivero</span></h4>
+              <h4>Lattes: <span><a href="http://" target="_blank" rel="noopener noreferrer">link</a></h4></span> 
+            </div>
+          <a href="#fechar" title="fechar" class="fechar"><button>Fechar</button></a>
+          </div>
+          
+        </div>
+
+        <div class="job-img"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div class="card-name">
+          <h3>Luis Rivero</h3>
+          <h6>Orientador</h6>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/lucho.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href="#abrirModal1"><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+        <div id="abrirModal1" class="modal">
+          <div class="modal-conteiner">
+            <figure class="modal-figure">
+              <img class="modal-img" src="./assets/images/imgTeste.jpg" alt="">
+            </figure>
+            <div class="modal-text">
+              <h4>Nome: <span>Davi Viana</span></h4>
+              <h4>Lattes: <span><a href="http://" target="_blank" rel="noopener noreferrer">link</a></h4></span> 
+            </div>
+          <a href="#fechar" title="fechar" class="fechar"><button>Fechar</button></a>
+          </div>
+          
+        </div>
+
+        <div class="job-img"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div class="card-name">
+          <h3>Davi Viana</h3>
+          <h6>Orientador</h6>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="discentes">
+       <!-- Card -->
+       
+       <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/André Sousa Barreto.jpeg" alt="">
+          </figure>
+          <button class="card-btn"><a href="#abrirModal2"><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>Adailton</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      
+      <div id="abrirModal2" class="modal">
+        <div class="modal-conteiner">
+          <figure class="modal-figure">
+            <img class="modal-img" src="./assets/images/estudante.jpeg" alt="">
+          </figure>
+          <div class="modal-text">
+            <h4>Nome: <span>Adailton</span></h4>
+            <h4>Lattes: <span><a href="http://" target="_blank" rel="noopener noreferrer">link</a></h4></span> 
+          </div>
+        <a href="#fechar" title="fechar" class="fechar"><button>Fechar</button></a>
+        </div>
+        <!-- Card -->
+      </div>
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/Arthur Passos.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>Dayanne Cristina</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/Brenno.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>Flávia Naoshi</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/Carlos Vinicius.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>Jessica Costa</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/Gabriel Costa.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>João Pedro</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/Iago Victor SIlva Costa.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>Kennedy Anderson</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/João Davi Lima dos Santos.png" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>Yandson</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Ex Integrantes-->
+  <div class="section-header">
+    <h2>Ex-integrantes</h2>
+  </div>
+
+
+  <div class="integrantes ex">
+    <div class="tutores">
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/imgTeste.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href="#abrirModal1"><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+        <div id="abrirModal1" class="modal">
+          <div class="modal-conteiner">
+            <figure class="modal-figure">
+              <img class="modal-img" src="./assets/images/imgTeste.jpg" alt="">
+            </figure>
+            <div class="modal-text">
+              <h4>Nome: <span>João Inácio</span></h4>
+              <h4>Lattes: <span><a href="http://" target="_blank" rel="noopener noreferrer">link</a></h4></span> 
+            </div>
+          <a href="#fechar" title="fechar" class="fechar"><button>Fechar</button></a>
+          </div>
+          
+        </div>
+
+        <div class="job-img"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div class="card-name">
+          <h3>João Inácio</h3>
+          <h6>Orientador</h6>
+        </div>
+      </div>
+
+       <div id="abrirModal1" class="modal">
+          <div class="modal-conteiner">
+            <figure class="modal-figure">
+              <img class="modal-img" src="./assets/images/imgTeste.jpg" alt="">
+            </figure>
+            <div class="modal-text">
+              <h4>Nome: <span>João Inácio</span></h4>
+              <h4>Lattes: <span><a href="http://" target="_blank" rel="noopener noreferrer">link</a></h4></span> 
+            </div>
+          <a href="#fechar" title="fechar" class="fechar"><button>Fechar</button></a>
+          </div>
+          
+        </div>
+      <!-- Card -->
+
+       <!-- Card -->
+       <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/imgTeste.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div class="card-name">
+          <h3>João Inácio</h3>
+          <h6>Orientador</h6>
+        </div>
+      </div>
+      <!-- Card -->
+    </div>
+    
+    <div class="discentes ex">
+       <!-- Card -->
+       
+       <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/estudante.jpeg" alt="">
+          </figure>
+          <button class="card-btn"><a href="#abrirModal2"><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>Júlia Farias</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      
+      <div id="abrirModal2" class="modal">
+        <div class="modal-conteiner">
+          <figure class="modal-figure">
+            <img class="modal-img" src="./assets/images/estudante.jpeg" alt="">
+          </figure>
+          <div class="modal-text">
+            <h4>Nome: <span>Júlia Farias</span></h4>
+            <h4>Lattes: <span><a href="http://" target="_blank" rel="noopener noreferrer">link</a></h4></span> 
+          </div>
+        <a href="#fechar" title="fechar" class="fechar"><button>Fechar</button></a>
+        </div>
+        <!-- Card -->
+      </div>
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/imgTeste.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>João Inácio</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/imgTeste.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>João Inácio</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/imgTeste.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>João Inácio</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/imgTeste.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>Luiz Mario</h3>
+          <h6>Orientador</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/imgTeste.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>Luiz Mario</h3>
+          <h6>Orientador</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/imgTeste.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>João Inácio</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/imgTeste.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>João Inácio</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-img">
+          <figure>
+            <img src="./assets/images/imgTeste.jpg" alt="">
+          </figure>
+          <button class="card-btn"><a href=""><i class="fas fa-file-alt"></i>Lattes</a></button>
+        </div>
+
+        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+        <div class="card-name">
+          <h3>João Inácio</h3>
+          <h6>Orientando</h6>
+        </div>
+      </div>
+      <!-- Card -->
+
+      
+    </div>
+  </div>
+</div>
+
+  <footer>
+    <div class="container">
+      <div class="logos">
+        <img src="./assets/images/Logo principal brancoc.png" alt="Logo Dexters">
+        <div class="divider"></div>
+        <div class="logos-secundarias">
+          <img src="/assets/images/UFMA.png" alt="UFMA Logo">
+          <div class="temporario">DeINF</div>
+        </div>
+      </div>
+    </div>
+    <div class="infos">
+      <ul>
+        <li><img src="./assets/svg/map icon.svg" alt=""><p>Av. dos Portugueses, 1966 - Vila Bacanga, São Luís - MA, 65080-805, CCET - Bloco X - Sala XXX</p></li>
+        <li><img src="./assets/svg/email icon.svg" alt=""><p>E-mail: dexters.ufma@gmail.com</p></li>
+      </ul>
+    </div>
+    <div class="sociais">
+      <ul>
+        <li><img src="./assets/svg/instagram icon.svg" alt=""><a href="https://www.instagram.com/petcompufma/">@Dexters</a></li>
+        <li><img src="./assets/svg/facebook icon.svg" alt=""><a href="/">@Dexters</a></li>
+        <li><img src="./assets/svg/twitter icon.svg" alt=""><a href="/">@Dexters</a></li>
+      </ul>
+    </div>
+    <div class="contato">
+      <img src="/assets/svg/comment icon.svg" alt=""><a href="/contato.html">Fale Conosco</a>
+    </div>
+  </footer>
+  <script src="/scripts/script.js"></script>
+</body>
+</html>

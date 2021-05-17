@@ -1,0 +1,505 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+/* HEADER */
+
+header {
+  background: #fafafa;
+  box-shadow: 2px -1px 20px 0px #e1e1e1;
+  height: 100px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logos {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+  padding: 10px;
+  width: 250px;
+}
+
+header .logos a .dexters-logo {
+  width: 100%;
+}
+
+header .logos .ufma-logo {
+  width: 70px;
+}
+
+header .logos .divider {
+  background: #F3D248;
+  height: 80%;
+  margin: 0 10px ;
+  width: 2px;
+}
+
+header nav {
+  align-items: center;
+  display: flex;
+  margin-right: 100px;
+}
+
+header .open-btn, header .close-btn {
+  display: none;
+}
+
+header nav ul {
+  align-items: center;
+  display: flex;
+  list-style: none;
+}
+
+header nav button {
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  padding: 8px;
+}
+
+
+header nav button:hover {
+  background: #575a5b6b;
+}
+
+header nav a, header nav .dropbtn {
+  color: #6FA9B3;
+  text-decoration: none;
+}
+
+header .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+header .dropdown .dropdown-content-sobre {
+  background: #fff;
+  box-shadow: 0px 8px 16px 0px #00000033;
+  display: none;
+  font-size: 16px;
+  overflow: auto;
+  min-width: 160px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+header .dropdown .dropdown-content-sobre a {
+  display: block;
+  padding: 10px;
+}
+
+header .dropdown .dropdown-content-sobre a:hover {
+  background: #e1e1e1;
+}
+
+header .dropdown .show-dropdown-sobre {
+  display: block;
+}
+
+header .dropdown .dropdown-content-produtos {
+  background: #fff;
+  box-shadow: 0px 8px 16px 0px #00000033;
+  display: none;
+  font-size: 16px;
+  overflow: auto;
+  min-width: 160px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+header .dropdown .dropdown-content-produtos a {
+  display: block;
+  padding: 10px;
+}
+
+header .dropdown .dropdown-content-produtos a:hover {
+  background: #e1e1e1;
+}
+
+header .dropdown .show-dropdown-produto {
+  display: block;
+}
+
+/* HEADER */
+
+.section-header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #6FA9B3;
+  bottom: 20px;
+  left: calc(50% - 30px);
+}
+
+.section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+mark {
+  background: none;
+  color: #545457;
+  text-decoration: none;
+  
+  display: inline-block;
+  position: relative;
+}
+mark:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  position: absolute;
+  background: #f3d14888;
+  transition: height 0.3s ease 0s;
+  z-index: 0;
+  width: 100%;
+}
+mark:hover:after { 
+  height: 10px; 
+  left: 0; 
+}
+
+/* FOOTER */
+
+footer {
+  align-items: center;
+  background: #6FA9B3;
+  color: #545457;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  padding: 20px 0;
+  width: 100%;
+}
+
+footer .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  width: 400px;
+}
+
+footer .sobre {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .logos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer .logos img {
+  height: auto;
+  margin: auto 10px;
+  width: 100%;
+}
+
+footer .logos .divider {
+  background: #f3d14838;
+  height: 2px;
+  margin-bottom: 20px;
+}
+
+footer .logos-secundarias {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer .logos-secundarias .temporario {
+  align-items: center;
+  background: green;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+footer .logos-secundarias img, footer .logos-secundarias .temporario {
+  height: 75px;
+  width: 75px;
+}
+
+footer .infos {
+  width: 300px;
+}
+
+footer .infos ul {
+  list-style: none;
+}
+
+footer .infos li {
+  display: flex;
+  margin: 14px 0;
+  padding: 12px;
+}
+
+footer .infos li p {
+  width: 400px;
+}
+
+footer .infos img {
+  width: 25px;
+}
+
+footer .infos a, footer .infos p {
+  color: #fff;
+  margin-left: 20px;
+}
+
+footer .infos .btn-contato {
+  align-items: center;
+  background: #6FA9FF;
+  border-radius: 6px;
+}
+
+footer .infos a {
+  text-decoration: none;
+}
+
+footer .sociais ul {
+  list-style: none;
+}
+
+footer .sociais li {
+  align-items: center;
+  display: flex;
+  padding: 12px;
+  width: 300px;
+}
+
+footer .sociais li a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: -20px;
+  padding: 12px;
+  text-decoration: none;
+  width: 140px;
+}
+
+footer .sociais img {
+  width: 25px;
+}
+
+footer .sociais a, footer .sociais p {
+  color: #fff;
+  margin-left: 20px;
+}
+
+footer .sociais .btn-contato {
+  align-items: center;
+  display: flex;
+  background: #6FA9FF;
+  border-radius: 6px;
+}
+
+footer .infos a {
+  text-decoration: none;
+}
+
+footer .contato {
+  background: #6FA9FF;
+  border-radius: 6px;
+  box-shadow: 4px 10px 10px 0px #5273a5;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  width: 175px;
+}
+
+footer .contato img {
+  width: 25px;
+}
+
+footer .contato a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .contato a {
+  opacity: .8;
+}
+
+@media (max-width: 800px) {
+
+  header {
+    height: auto;
+  }
+
+  header .logos {
+    margin: auto 0;
+    margin-left: 10px;
+    width: 100px;
+  }
+
+  header nav {
+    margin: 0;
+  }
+
+  header .logos .ufma-logo, header .divider {
+    display: none;
+  }
+
+  header .logos .dexters-logo {
+    height: 100%;
+    width: 100%;
+  }
+
+  header .open-btn, header .close-btn {
+    display: block;
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  ul li {
+    padding: 10px;
+  }
+  
+  .overlay {
+    background-color: #6FA9B3;
+    background-color: #6FA9B3f8;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    transition: .4s;
+    height: 0%;
+    width: 100%;
+  }
+
+  .overlay-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .overlay a, .overlay button, .overlay .dropbtn {
+    display: flex;
+
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+
+    transition: .2s;
+  }
+
+  .overlay .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+
+  header nav button {
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  header .open-btn {
+    margin-right: 10px;
+    width: 30px;
+  }
+
+  header nav ul li .dropdown .dropdown-content-sobre a, header nav ul li .dropdown .dropdown-content-produtos a {
+    color: #000;
+  }
+
+  header nav .overlay-content ul li .dropdown .dropbtn span {
+    margin-left: -5px;
+  }
+  
+  .dropbtn {
+    color: #fff;
+    display: flex;
+    margin-left: 12px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+  }
+
+  footer .container {
+    width: 100%;
+  }
+
+  footer .container .logos {
+    margin-bottom: 20px;
+  }
+
+  footer .container .logos img, footer .container .logos .divider {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  footer .container .logos .logos-secundarias {
+    margin: 10px auto;
+    width: 200px;
+  }
+  footer .container .logos .logos-secundarias img, footer .container .logos .logos-secundarias .temporario {
+    margin: 0 10px;
+    width: 75px;
+  }
+
+  footer .infos ul li {
+    align-items: center;
+    display: flex;
+    padding: 0;
+    width: 300px;
+  }
+
+  footer .sociais ul li p {
+    margin: auto;
+    text-align: left;
+  }
+}

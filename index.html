@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEXTERS</title>
+
+  <link rel="icon" href="./assets/images/Logo Secundária 2 brancoc.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+
+  <header>
+    <div class="logos">
+      <a href="./index.html"><img src="./assets/images/Logo Secundária 1c.png" alt="Logo Dexters" class="dexters-logo"></a>
+      <div class="divider"></div>
+      <img src="./assets/images/UFMA.png" alt="Logo UFMA" class="ufma-logo">
+    </div>
+    <nav id="nav-bar" class="overlay">
+      <img src="/assets/svg/close-24px.svg" alt="" class="close-btn" onclick="closeMenu()">
+      <div class="overlay-content">
+        <ul>
+          <li>
+            <button>
+              <a href="./index.html">Início</a>
+            </button>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="DropdownSobre()" class="dropbtn">
+                Conheça o Dexters
+                <span class="material-icons">
+                  arrow_drop_down
+                </span>
+              </button>
+              <div id="dropdown-sobre" class="dropdown-content-sobre">
+                <a href="./sobre.html">Sobre</a>
+                <a href="./integrantes.html">Integrantes</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button><a href="./publicacoes.html">Publicações</a></button>
+          </li>
+          <li>
+            <button><a href="./projetos.html">Projetos</a></button>
+          </li>
+          <li>
+            <button><a href="./noticias.html">Notícias</a></button>
+          </li>
+          <!-- <li>
+            <div class="dropdown">
+              <button onclick="DropdownProdutos()" class="dropbtn">
+                Produtos
+                <span class="material-icons">
+                  arrow_drop_down
+                </span>
+              </button>
+              <div id="dropdown-produtos" class="dropdown-content-produtos">
+                <a href="./eventos.html">Eventos</a>
+                <a href="./produtos-podcomp.html">PodCast</a>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+    <img src="/assets/svg/menu-24px.svg" alt="" class="open-btn" onclick="openMenu()">
+  </header>
+
+  <main>
+
+    <section id="banner">
+      <div class="texto-banner">
+        <h3>DEXTERS um Espaço de Pesquisa e Inovação em Engenharia de Software</h3>
+        <p>O nosso objetivo é ser o melhor laboratório de Engenharia de Software do Brasil</p>
+        <a href="./sobre.html">Conheça</a>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="resumo-dexters">
+        <div class="images">
+          <figure class="gallery__item gallery__item--1">
+            <img src="./assets/images/Logo principal pretoc.png" alt="Gallery image 1" class="gallery__img">
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img src="./assets/images/Logo Secundária 2c.png" alt="Gallery image 2" class="gallery__img">
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img src="./assets/images/Logo Secundária 2c.png" alt="Gallery image 3" class="gallery__img">
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img src="./assets/images/Logo Principalc.png" alt="Gallery image 4" class="gallery__img">
+        </div>
+        <div class="text-dexters">
+          <h1>Conheça o <mark class="highlight">DEXTERS</mark></h1>
+          <p>Um Espaço para produção e desenvolvimento em Engenharia de Software, Sistema de Informação, Ensino de Computação, Modelagem de Sistemas Complexos e Interação Humano Computador de forma inovadora, localizado no Centro de Ciências Exatas e Tecnologias (CCET), Development and user EXperience of TEchnologies and Research in Software Lab (DEXTERS) está sob a coordenação do professor Luis Rivero.
+          </p>
+          <a href="./sobre.html">Veja Mais ></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="atividades">
+      <div class="atividades">
+        <div class="atividades-desenvolvidas">
+          <h1>Áreas de Atuação</h1>
+          <p>
+            O nosso laboratório trabalha com as mais diversas áreas dentro da Engenharia de Software 
+          </p>
+        </div>
+        <div class="images-atividades">
+          <div class="card-atividade-1">
+            <div class="texto">
+              <h3>Engenharia de Software</h3>
+              <hr>
+            </div>
+          </div>
+          <div class="card-atividade-2">
+            <div class="texto">
+              <h3>Modelagem de Sistemas Complexos</h3>
+              <hr>
+            </div>
+          </div>
+          <div class="card-atividade-3">
+            <div class="texto">
+              <h3>Interação Humano Computador</h3>
+              <hr>
+            </div>
+          </div>
+          <div class="card-atividade-4">
+            <div class="texto">
+              <h3>Sistemas de Informação</h3>
+              <hr>
+            </div>
+          </div>
+          <div class="card-atividade-5">
+            <div class="texto">
+              <h3>Ensino de Computação</h3>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="logos">
+        <img src="./assets/images/Logo principal brancoc.png" alt="Logo Dexters">
+        <div class="divider"></div>
+        <div class="logos-secundarias">
+          <img src="/assets/images/UFMA.png" alt="UFMA Logo">
+          <div class="temporario">DeINF</div>
+        </div>
+      </div>
+    </div>
+    <div class="infos">
+      <ul>
+        <li><img src="./assets/svg/map icon.svg" alt=""><p>Av. dos Portugueses, 1966 - Vila Bacanga, São Luís - MA, 65080-805, CCET - Bloco X - Sala XXX</p></li>
+        <li><img src="./assets/svg/email icon.svg" alt=""><p>E-mail: dexters.ufma@gmail.com</p></li>
+      </ul>
+    </div>
+    <div class="sociais">
+      <ul>
+        <li><img src="./assets/svg/instagram icon.svg" alt=""><a href="https://www.instagram.com/petcompufma/">@Dexters</a></li>
+        <li><img src="./assets/svg/facebook icon.svg" alt=""><a href="/">@Dexters</a></li>
+        <li><img src="./assets/svg/twitter icon.svg" alt=""><a href="/">@Dexters</a></li>
+      </ul>
+    </div>
+    <div class="contato">
+      <img src="/assets/svg/comment icon.svg" alt=""><a href="/contato.html">Fale Conosco</a>
+    </div>
+  </footer>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>

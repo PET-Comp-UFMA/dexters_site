@@ -1,0 +1,61 @@
+* {
+  font-size: 18px;
+}
+
+.mensagem {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  padding-top: 0;
+}
+
+.mensagem input {
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-top: 30px;
+  outline: none;
+}
+
+.mensagem .nome {
+  width: 100%;
+}
+
+.mensagem .telefone-email {
+  align-items: unset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mensagem .telefone, .mensagem .email {
+  width: 48%;
+}
+
+.mensagem .input-mensagem {
+  border: none;
+  border: 1px solid #000;
+  height: 500px;
+  padding: 20px;
+  width: 100%;
+}
+
+main button {
+  background: #6FA9FF;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100px;
+}
+
+main button:hover {
+  background: #71c0ce;
+}
+
+@media (max-width: 800px) {
+  .mensagem {
+    padding: 20px;
+  }
+}

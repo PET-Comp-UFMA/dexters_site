@@ -1,0 +1,259 @@
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    
+}
+
+.title h1{
+    font-family: 'Basic', sans-serif !important;
+    color: #545457;
+}
+
+.title .stripe{
+    background-color:rgba(30, 213, 253, 0.9);
+    height: 3px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.integrantes{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 30px 10% 30px 10%;
+}
+
+.integrantes .tutores{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/*========================
+ ######## Cards ########
+=========================*/
+
+.card{
+    position: relative;
+    width: 240px;
+    height: 300px;
+    border-radius: 7px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+    
+}
+.integrantes .discentes{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.discentes .card{
+    width: 200px;
+    height: 260px;
+}
+
+.discentes .card .card-img{
+    height: 160px;
+    position: relative;
+    margin: 0;
+}
+.discentes .card .card-img .card-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    background-color: #01B4ED;
+    padding: 5px;
+    width: 74px;
+    height: 30px;   
+    border: 1px solid #01B4ED;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    
+}
+.discentes .card .job-img{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 44px;
+    height: 38px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    bottom: 85px;
+    left: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card .job-img i{
+    font-size: 15px;
+}
+.card .job-img{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 54px;
+    height: 43px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    bottom: 85px;
+    left: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card .job-img i{
+    font-size: 25px;
+}
+.card .card-img{
+    height: 200px;
+    position: relative;
+    margin: 0;
+}
+.card .card-img figure{
+    height: 100%;
+    width: 100% ;
+    
+    margin: 0;
+}
+.card .card-img figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.card .card-img .card-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    background-color: #01B4ED;
+    padding: 5px;
+    width: 84px;
+    height: 30px;   
+    border: 1px solid #01B4ED;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    
+}
+
+.card .card-img .card-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.card .card-img .card-btn a i{
+    margin-right: 5px;
+}
+.card .card-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 89px;
+    text-align: center;
+}
+
+.card .card-name h3{
+    font-family: 'Basic', sans-serif !important;
+    font-size: 25px;
+    line-height: 31px;
+    color: #0FC3E2;
+}
+.card .card-name h6{
+    font-size: 12px;
+    line-height: 15px;  
+    color: #B1B1B1;
+}
+
+.ex .card img{
+    -webkit-filter: grayscale(100%);
+}
+/*========================
+ ######## Modal ########
+=========================*/
+
+.modal{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: 'Basic', sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+
+}
+
+.modal:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal > div{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    margin: 5% auto;
+    padding: 15px 20px;
+    background: #EFEFEF;
+    border-radius: 5px;
+}
+.modal .modal-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.modal .modal-figure{
+    height: 200px;
+    width: 200px;
+}
+
+.modal .modal-figure .modal-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.modal .modal-conteiner .modal-text{
+    width: 100%;
+    margin-left: 50px;
+    font-size: 1.2rem;
+}
+.modal .modal-conteiner .modal-text span{
+    font-weight: 400;
+}
+.modal a button{
+    width: 80px;
+    height: 28px;
+    border: 2px solid #fff;
+    background-color: #343564;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff; 
+    
+}
+.modal a button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #343564;
+    border: 2px solid #343564;
+}
