@@ -204,7 +204,6 @@
 .atividades .images-atividades .card-atividade-2 {
   align-items: flex-end;
   background: linear-gradient(90deg, #6FA8B2 26.43%, rgba(243, 210, 72, 0.94) 89.79%);
-
   border-radius: 4px;
   display: flex;
   height: 250px;
@@ -222,7 +221,6 @@
 .atividades .images-atividades .card-atividade-3 {
   align-items: flex-end;
   background: linear-gradient(270deg, rgba(243, 210, 72, 0.94) 5.96%, rgba(187, 193, 117, 0.965347) 32.62%, rgba(120, 172, 172, 0.99585) 70.4%, #6FA9B3 84.64%);
-
   border-radius: 4px;
   display: flex;
   height: 250px;
@@ -240,7 +238,6 @@
 .atividades .images-atividades .card-atividade-4 {
   align-items: flex-end;
   background: linear-gradient(233.07deg, #6FA9B3 21.5%, rgba(243, 210, 72, 0.94) 84.78%);
-
   border-radius: 4px;
   display: flex;
   height: 250px;
@@ -258,7 +255,6 @@
 .atividades .images-atividades .card-atividade-5 {
   align-items: flex-end;
   background: linear-gradient(306.66deg, #6FA9B3 21.24%, rgba(243, 210, 72, 0.94) 87.61%);
-
   border-radius: 4px;
   display: flex;
   height: 250px;
@@ -318,7 +314,9 @@
   }
 
   .texto-banner {
+    height: auto;
     text-align: center;
+    padding: 50px 0;
   }
 
   .texto-banner h3 {
@@ -336,9 +334,12 @@
     display: flex;
     flex-direction: column;
     height: auto;
+    padding: 30px;
   }
 
   .resumo-dexters .images {
+    grid-gap: 4px;
+    padding: 0;
     width: 100%;
   }
 
@@ -383,6 +384,7 @@
   .atividades .images-atividades .card-atividade-1 {
     height: 150px;
     margin: 10px;
+    padding: 10px;
     width: 160px;
   }
 
@@ -393,6 +395,7 @@
   .atividades .images-atividades .card-atividade-2 {
     height: 150px;
     margin: 10px;
+    padding: 10px;
     width: 160px;
   }
 
@@ -403,6 +406,7 @@
   .atividades .images-atividades .card-atividade-3 {
     height: 150px;
     margin: 10px;
+    padding: 10px;
     width: 160px;
   }
 
@@ -413,6 +417,8 @@
   .atividades .images-atividades .card-atividade-4 {
     height: 150px;
     margin: 10px;
+    margin-top: -60px;
+    padding: 10px;
     width: 160px;
   }
 
@@ -423,6 +429,8 @@
   .atividades .images-atividades .card-atividade-5 {
     height: 150px;
     margin: 10px;
+    margin-top: -60px;
+    padding: 10px;
     width: 160px;
   }
 
