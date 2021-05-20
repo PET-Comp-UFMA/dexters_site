@@ -143,7 +143,6 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
     var result = format(article,citation);
     document.getElementById(id).innerHTML = result;
 }
-
 </script>
   <main>
     <section id="publicacoes">
@@ -165,35 +164,39 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
             <h2><?php print_r($row['titulo']);?></h2>
             <p><?php print_r($row['autores']);?></p>
             <a href="<?php print_r($row['link']);?>">Resumo</a><br>
-            <input type="button" onclick="testa('apa',<?php print_r($row['codigo']);?>,
-                                                '<?php print_r($row['titulo']);?>',
-                                                '<?php print_r($row['autores']);?>',
-                                                '<?php print_r($row['revista']);?>',
-                                                '<?php print_r($row['ano']);?>',
-                                                '<?php print_r($row['volume']);?>',
-                                                '<?php print_r($row['edicao']);?>',
-                                                '<?php print_r($row['paginas']);?>'
-                                                );" value="apa">
-            <input type="button" onclick="testa('mla',<?php print_r($row['codigo']);?>,
-                                                '<?php print_r($row['titulo']);?>',
-                                                '<?php print_r($row['autores']);?>',
-                                                '<?php print_r($row['revista']);?>',
-                                                '<?php print_r($row['ano']);?>',
-                                                '<?php print_r($row['volume']);?>',
-                                                '<?php print_r($row['edicao']);?>',
-                                                '<?php print_r($row['paginas']);?>'
-                                                );" value="mla">
-            <input type="button" onclick="testa('vancouver',<?php print_r($row['codigo']);?>,
-                                                '<?php print_r($row['titulo']);?>',
-                                                '<?php print_r($row['autores']);?>',
-                                                '<?php print_r($row['revista']);?>',
-                                                '<?php print_r($row['ano']);?>',
-                                                '<?php print_r($row['volume']);?>',
-                                                '<?php print_r($row['edicao']);?>',
-                                                '<?php print_r($row['paginas']);?>'
-                                                );" value="vancouver">
+            <div class="btn-conteiner">
 
-            <div id="<?php print_r($row['codigo']);?>"></div>
+              <input type="button" class = "publi-btn" onclick="testa('apa',<?php print_r($row['codigo']);?>,
+                                                  '<?php print_r($row['titulo']);?>',
+                                                  '<?php print_r($row['autores']);?>',
+                                                  '<?php print_r($row['revista']);?>',
+                                                  '<?php print_r($row['ano']);?>',
+                                                  '<?php print_r($row['volume']);?>',
+                                                  '<?php print_r($row['edicao']);?>',
+                                                  '<?php print_r($row['paginas']);?>'
+                                                  );" value="APA">
+              <input type="button" class = "publi-btn" onclick="testa('mla',<?php print_r($row['codigo']);?>,
+                                                  '<?php print_r($row['titulo']);?>',
+                                                  '<?php print_r($row['autores']);?>',
+                                                  '<?php print_r($row['revista']);?>',
+                                                  '<?php print_r($row['ano']);?>',
+                                                  '<?php print_r($row['volume']);?>',
+                                                  '<?php print_r($row['edicao']);?>',
+                                                  '<?php print_r($row['paginas']);?>'
+                                                  );" value="MLA">
+              <input type="button" class = "publi-btn" onclick="testa('vancouver',<?php print_r($row['codigo']);?>,
+                                                  '<?php print_r($row['titulo']);?>',
+                                                  '<?php print_r($row['autores']);?>',
+                                                  '<?php print_r($row['revista']);?>',
+                                                  '<?php print_r($row['ano']);?>',
+                                                  '<?php print_r($row['volume']);?>',
+                                                  '<?php print_r($row['edicao']);?>',
+                                                  '<?php print_r($row['paginas']);?>'
+                                                  );" value= "Vancouver">
+
+              <div id="<?php print_r($row['codigo']);?>"></div>
+            </div>
+           
         </div>
         <?php
             }
@@ -230,5 +233,6 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
     </div>
   </footer>
   <script src="./scripts/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js">
 </body>
 </html>

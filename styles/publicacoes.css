@@ -1,13 +1,17 @@
 
 .publicacao {
   align-items: left;
-  background: #eeeeee70;
+  background: #f9fcfd;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 30px auto;
   padding: 12px;
   width: 85%;
+  min-height: 250px;
+  border: 1px solid;
+  border-radius: 6px;
+  box-shadow: 5px 8px #888888;
 }
 
 .publicacao h2 {
@@ -25,4 +29,27 @@
   font-size: 16px;
   text-decoration: none;
   width: 70px;
+}
+.btn-conteiner{
+  display: flex;
+  justify-content: center;
+}
+.publi-btn{
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  border: 2px solid #0d5878;
+  border-radius: 5px;
+  background-color: #01B4ED;
+  color: #fff;
+  
+  font-weight: bold;
+  box-shadow: 2px 3px #888888;
+}
+
+.publi-btn:hover{
+  cursor: pointer;
+  
 }
