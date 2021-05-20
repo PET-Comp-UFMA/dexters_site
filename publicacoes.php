@@ -21,6 +21,7 @@
 
 <body>
 
+
   <header>
     <div class="logos">
       <a href="./index.html"><img src="./assets/images/Logo Secundária 1c.png" alt="Logo Dexters" class="dexters-logo"></a>
@@ -137,9 +138,9 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
     article.title = titulo;
     article.journal = revista;
     article.year = ano;
-    article.volume = volume;
-    article.number = edicao;
-    article.pages = paginas;
+    article.volume = volume == '0'? '': volume; 
+    article.number = edicao == '0'? '': edicao;
+    article.pages = paginas == '0'?'': paginas;
     
     var result = format(article,citation);
     document.getElementById(id).value = result;
@@ -174,12 +175,12 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
                     $row = mysqli_fetch_array($result);
         ?>
         <div class="publicacao">
-            <h2><?php print_r($row['titulo']);?></h2>
-            <p><?php print_r($row['autores']);?></p>
+            <h2><?php print_r(utf8_encode($row['titulo']));?></h2>
+            <p><?php print_r(utf8_encode($row['autores']));?></p>
             <a href="<?php print_r($row['link']);?>">Resumo</a><br>
             <div class="btn-conteiner">
 
-              <input type="button" id="<?php print_r($row['codigo']."0");?>" class = "publi-btn" onclick="testa('apa',<?php print_r($row['codigo']);?>,
+              <input type="button" id="<?php  print_r($row['codigo']."0");?>" class = "publi-btn" onclick="testa('apa',<?php print_r($row['codigo']);?>,
                                                   '<?php print_r($row['titulo']);?>',
                                                   '<?php print_r($row['autores']);?>',
                                                   '<?php print_r($row['revista']);?>',
