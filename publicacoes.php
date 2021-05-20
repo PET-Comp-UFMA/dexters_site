@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/publicacoes.css">
 </head>
+
 <body>
 
   <header>
@@ -246,6 +247,6 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
     </div>
   </footer>
   <script src="./scripts/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js">
+
 </body>
 </html>
