@@ -1,4 +1,5 @@
 .noticia{
+    color: #8893B2;
     margin-left:10%;
     margin-right: 10%;
     display:flex;
@@ -17,5 +18,9 @@
   .noticia img {
     height: 200px;
     width: 100%;
+  }
+  .text{
+    padding:5px;
+    text-align: justify;
   }
 }
