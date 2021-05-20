@@ -1,3 +1,8 @@
+.citacao{
+  width: 0;
+  height: 0;
+  border: 0;
+}
 
 .publicacao {
   align-items: left;
@@ -11,7 +16,7 @@
   min-height: 250px;
   border: 1px solid;
   border-radius: 6px;
-  box-shadow: 5px 8px #888888;
+  box-shadow: 2px 5px 10px 1px #888888;
 }
 
 .publicacao h2 {
@@ -25,14 +30,14 @@
 }
 
 .publicacao a {
-  color: #33C3FF;
+  color: #6FA9FF;
   font-size: 16px;
   text-decoration: none;
   width: 70px;
 }
 .btn-conteiner{
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 .publi-btn{
   margin-top: 5px;
@@ -40,13 +45,13 @@
   width: 100px;
   height: 25px;
   text-align: center;
-  border: 2px solid #0d5878;
+  border: none;
   border-radius: 5px;
-  background-color: #01B4ED;
+  background-color: #6FA9FF;
   color: #fff;
   
   font-weight: bold;
-  box-shadow: 2px 3px #888888;
+  box-shadow: 2px 3px 4px 1px #888888;
 }
 
 .publi-btn:hover{

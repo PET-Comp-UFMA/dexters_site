@@ -24,7 +24,7 @@
     <div class="logos">
       <a href="./index.html"><img src="./assets/images/Logo Secundária 1c.png" alt="Logo Dexters" class="dexters-logo"></a>
       <div class="divider"></div>
-      <<a href="https://portalpadrao.ufma.br/site" target="_blank"><img src="./assets/images/UFMA.png" alt="Logo UFMA" class="ufma-logo"></a>
+      <a href="https://portalpadrao.ufma.br/site" target="_blank"><img src="./assets/images/UFMA.png" alt="Logo UFMA" class="ufma-logo"></a>
     </div>
     <nav id="nav-bar" class="overlay">
       <img src="./assets/svg/close-24px.svg" alt="" class="close-btn" onclick="closeMenu()">
@@ -94,7 +94,7 @@ function format(data, formatValue) {
         if (formatValue == 'mla') {
             return data.authors +
                 ". \"" + data.title + "\". " +
-                "<em>" + data.journal + "<\/em>" +
+                data.journal +
                 ((data.volume) ? " " + data.volume : "") +
                 ". " +
                 ((data.number) ? " " + data.number : "") + 
@@ -106,9 +106,9 @@ function format(data, formatValue) {
             return data.authors +
                 " (" + data.year + "). " + 
                 data.title + 
-                "<em>" + ". " + data.journal + 
-                ((data.volume) ? ", <em>" + data.volume : "") +
-                "<\/em>" +
+                 ". " + data.journal + 
+                ((data.volume) ? "," + data.volume : "") +
+                
                 ((data.number) ? "(" + data.number + ")" : "") + 
                 ((data.pages) ? ", " + data.pages : "") +
                 ".";
@@ -141,13 +141,25 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
     article.pages = paginas;
     
     var result = format(article,citation);
-    document.getElementById(id).innerHTML = result;
+    document.getElementById(id).value = result;
+
+    function copy(){
+      document.getElementById(id).select();
+      document.execCommand('copy');
+    }
+
+    document.getElementById(id+"0").addEventListener("click",copy());
+    document.getElementById(id+"1").addEventListener("click",copy());
+    document.getElementById(id+"2").addEventListener("click",copy());
+
+    alert("Sua citação foi copiada para a área de transferência!");
+    
 }
 </script>
   <main>
-    <section id="publicacoes">
+    <section id="publicacoes ">
         <div class="section-header">
-            <h2>Publicações</h2>
+            <h2> Publicações </h2>
         </div>
         <?php
             mysqli_select_db($mysqli, $bd) or die("Could not select database");
@@ -166,7 +178,7 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
             <a href="<?php print_r($row['link']);?>">Resumo</a><br>
             <div class="btn-conteiner">
 
-              <input type="button" class = "publi-btn" onclick="testa('apa',<?php print_r($row['codigo']);?>,
+              <input type="button" id="<?php print_r($row['codigo']."0");?>" class = "publi-btn" onclick="testa('apa',<?php print_r($row['codigo']);?>,
                                                   '<?php print_r($row['titulo']);?>',
                                                   '<?php print_r($row['autores']);?>',
                                                   '<?php print_r($row['revista']);?>',
@@ -175,8 +187,8 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
                                                   '<?php print_r($row['edicao']);?>',
                                                   '<?php print_r($row['paginas']);?>'
                                                   );" value="APA">
-              <input type="button" class = "publi-btn" onclick="testa('mla',<?php print_r($row['codigo']);?>,
-                                                  '<?php print_r($row['titulo']);?>',
+              <input type="button" id="<?php print_r($row['codigo']."1");?>" class = "publi-btn" onclick="testa('mla',<?php print_r($row['codigo']);?>,
+                                                   '<?php print_r($row['titulo']);?>',
                                                   '<?php print_r($row['autores']);?>',
                                                   '<?php print_r($row['revista']);?>',
                                                   '<?php print_r($row['ano']);?>',
@@ -184,7 +196,7 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
                                                   '<?php print_r($row['edicao']);?>',
                                                   '<?php print_r($row['paginas']);?>'
                                                   );" value="MLA">
-              <input type="button" class = "publi-btn" onclick="testa('vancouver',<?php print_r($row['codigo']);?>,
+              <input type="button" id="<?php print_r($row['codigo']."2");?>" class = "publi-btn" onclick="testa('vancouver',<?php print_r($row['codigo']);?>,
                                                   '<?php print_r($row['titulo']);?>',
                                                   '<?php print_r($row['autores']);?>',
                                                   '<?php print_r($row['revista']);?>',
@@ -194,7 +206,8 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
                                                   '<?php print_r($row['paginas']);?>'
                                                   );" value= "Vancouver">
 
-              <div id="<?php print_r($row['codigo']);?>"></div>
+              <input class="citacao" id="<?php print_r($row['codigo']);?>" value="">
+              
             </div>
            
         </div>
