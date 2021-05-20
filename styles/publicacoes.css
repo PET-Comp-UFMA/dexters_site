@@ -51,5 +51,11 @@
 
 .publi-btn:hover{
   cursor: pointer;
-  
+
+}
+
+.citacao{
+  width: 0;
+  height: 0;
+  border: 0;
 }
