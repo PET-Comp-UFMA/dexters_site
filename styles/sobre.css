@@ -12,7 +12,8 @@ main .container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 10vw);
-    grid-gap: 2.5rem; 
+    grid-gap: 10px; 
+    padding: 50px;
 }
 
 .gallery__img {
