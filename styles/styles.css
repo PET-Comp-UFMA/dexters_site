@@ -363,7 +363,7 @@ footer .contato a {
   header nav {
     margin: 0;
   }
-
+  
   header .logos .ufma-logo, header .divider {
     display: none;
   }
@@ -466,6 +466,11 @@ footer .contato a {
   footer .container .logos {
     margin-bottom: 20px;
   }
+
+  footer .container .logos a {
+    display: flex;
+  }
+
 
   footer .container .logos img, footer .container .logos .divider {
     margin: 0 auto;
