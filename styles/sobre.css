@@ -1,11 +1,15 @@
 main .container {
-    color: #8893B2;
     width: 100%;
     padding-right: 2rem;
     padding-left: 2rem;
     margin-bottom: 3rem;
     margin-right: auto;
     margin-left: auto;
+}
+
+main .container p {
+  color: #8893B2;
+  padding: 0 60px;
 }
 
 .gallery {
