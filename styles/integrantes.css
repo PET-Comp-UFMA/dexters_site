@@ -257,3 +257,19 @@
     color: #343564;
     border: 2px solid #343564;
 }
+
+@media (max-width: 800px) {
+  .modal > div {
+    width: 90%;
+  }
+
+  .card {
+    width: auto;
+  }
+
+  .discentes .card{
+    width: 210px;
+    height: 260px;
+    margin: 20px auto;
+  }
+}

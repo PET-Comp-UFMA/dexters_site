@@ -87,5 +87,9 @@ main .container p {
 @media (max-width: 800px) {
   .gallery {
     grid-gap: 4px; 
-}
+    padding: 0;
+  }
+  main .container p {
+    padding: 0;
+  }
 }
