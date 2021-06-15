@@ -1,8 +1,8 @@
 <?php
 $hostname="localhost";
-$bd="db_dexters";
+$bd="bd_dexters";
 $usuario="root";
-$senha="root3258";
+$senha="";
 
 $mysqli = new mysqli($hostname, $usuario, $senha, $bd);
 

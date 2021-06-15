@@ -175,8 +175,8 @@ function testa(citation, id, titulo, autores, revista, ano, volume, edicao, pagi
                     $row = mysqli_fetch_array($result);
         ?>
         <div class="publicacao">
-            <h2><?php print_r(utf8_encode($row['titulo']));?></h2>
-            <p><?php print_r(utf8_encode($row['autores']));?></p>
+            <h2><?php print_r($row['titulo']);?></h2>
+            <p><?php print_r($row['autores']);?></p>
             <a href="<?php print_r($row['link']);?>">Resumo</a><br>
             <div class="btn-conteiner">
 
