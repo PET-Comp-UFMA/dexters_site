@@ -1,7 +1,7 @@
 <?php
 $hostname="localhost";
-$bd="bd_dexters";
-$usuario="root";
+$bd="bibtex";
+$usuario="root2";
 $senha="";
 
 $mysqli = new mysqli($hostname, $usuario, $senha, $bd);
