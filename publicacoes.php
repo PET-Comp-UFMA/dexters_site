@@ -387,6 +387,7 @@
         <?php
           }
         }
+         $mysqli->close();
         ?>
 
 
