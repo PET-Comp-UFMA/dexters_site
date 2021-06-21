@@ -94,16 +94,16 @@
                     $row = mysqli_fetch_array($result);
         ?>
         <div class="publicacao">
-            <h2><?php print_r(utf8_encode($row['Title']));?></h2>
-            <p><?php print_r(utf8_encode($row['Authors']));?></p>
+            <h2><?php print_r($row['Title']);?></h2>
+            <p><?php print_r($row['Authors']);?></p>
             <a href="#">Resumo</a><br>
             <div class="btn-conteiner">
 
               <input type="button" id="<?php print_r($row['idArticle']."1");?>" class = "publi-btn" onclick="testa('mla',new Article(
               '<?php print_r($row['idArticle']);?>',
-              '<?php print_r(utf8_encode($row['Title']));?>',
-              '<?php print_r(utf8_encode($row['Authors']));?>',
-              '<?php print_r(utf8_encode($row['Journal']));?>',
+              '<?php print_r($row['Title']);?>',
+              '<?php print_r($row['Authors']);?>',
+              '<?php print_r($row['Journal']);?>',
               '<?php print_r($row['Year']);?>',
               '<?php print_r($row['Volume']);?>',
               '<?php print_r($row['Number']);?>',
@@ -113,9 +113,9 @@
               
               <input type="button" id="<?php print_r($row['idArticle']."2");?>" class = "publi-btn" onclick="testa('vancouver', new Article(
               '<?php print_r($row['idArticle']);?>',
-              '<?php print_r(utf8_encode($row['Title']));?>',
-              '<?php print_r(utf8_encode($row['Authors']));?>',
-              '<?php print_r(utf8_encode($row['Journal']));?>',
+              '<?php print_r($row['Title']);?>',
+              '<?php print_r($row['Authors']);?>',
+              '<?php print_r($row['Journal']);?>',
               '<?php print_r($row['Year']);?>',
               '<?php print_r($row['Volume']);?>',
               '<?php print_r($row['Number']);?>',
@@ -125,9 +125,9 @@
               
               <input type="button" id="<?php print_r($row['idArticle']."3");?>" class = "publi-btn" onclick="testa('apa', new Article(
               '<?php print_r($row['idArticle']);?>',
-              '<?php print_r(utf8_encode($row['Title']));?>',
-              '<?php print_r(utf8_encode($row['Authors']));?>',
-              '<?php print_r(utf8_encode($row['Journal']));?>',
+              '<?php print_r($row['Title']);?>',
+              '<?php print_r($row['Authors']);?>',
+              '<?php print_r($row['Journal']);?>',
               '<?php print_r($row['Year']);?>',
               '<?php print_r($row['Volume']);?>',
               '<?php print_r($row['Number']);?>',
@@ -137,9 +137,9 @@
               
               <input type="button" id="<?php print_r($row['idArticle']."3");?>" class = "publi-btn" onclick="testa('abnt', new Article(
               '<?php print_r($row['idArticle']);?>',
-              '<?php print_r(utf8_encode($row['Title']));?>',
-              '<?php print_r(utf8_encode($row['Authors']));?>',
-              '<?php print_r(utf8_encode($row['Journal']));?>',
+              '<?php print_r($row['Title']);?>',
+              '<?php print_r($row['Authors']);?>',
+              '<?php print_r($row['Journal']);?>',
               '<?php print_r($row['Year']);?>',
               '<?php print_r($row['Volume']);?>',
               '<?php print_r($row['Number']);?>',
@@ -167,80 +167,80 @@
           
         ?>
            <div class="publicacao">
-            <h2><?php print_r(utf8_encode($row['Title']));?></h2>
-            <p><?php print_r(utf8_encode($row['Authors']));?></p>
+            <h2><?php print_r($row['Title']);?></h2>
+            <p><?php print_r($row['Authors']);?></p>
             <a href="#">Resumo</a><br>
             <div class="btn-conteiner">
 
               <input type="button" id="<?php print_r($row['idInproceedings']."1");?>" class = "publi-btn" onclick="testa('mla',new Inproceedings(
               '<?php print_r($row['idInproceedings']);?>',
-              '<?php print_r(utf8_encode($row['Title']));?>',
-              '<?php print_r(utf8_encode($row['Authors']));?>',
-              '<?php print_r(utf8_encode($row['Booktitle']));?>',
+              '<?php print_r($row['Title']);?>',
+              '<?php print_r($row['Authors']);?>',
+              '<?php print_r($row['Booktitle']);?>',
               '<?php print_r($row['Year']);?>',
-              '<?php print_r(utf8_encode($row['Editor']));?>',
+              '<?php print_r($row['Editor']);?>',
               '<?php print_r($row['Volume']);?>',
               '<?php print_r($row['Number']);?>',
               '<?php print_r($row['Series']);?>',
               '<?php print_r($row['Pages']);?>',
-              '<?php print_r(utf8_encode($row['Address']));?>',
+              '<?php print_r($row['Address']);?>',
               '<?php print_r($row['Month']);?>',
-              '<?php print_r(utf8_encode($row['Organization']));?>',
-              '<?php print_r(utf8_encode($row['Publisher']));?>',
+              '<?php print_r($row['Organization']);?>',
+              '<?php print_r($row['Publisher']);?>',
               '<?php print_r($row['Note']);?>'  
               ),<?php print_r($row['idInproceedings']."00");?>);" value="MLA">
             
                <input type="button" id="<?php print_r($row['idInproceedings']."2");?>" class = "publi-btn" onclick="testa('vancouver',new Inproceedings(
               '<?php print_r($row['idInproceedings']);?>',
-              '<?php print_r(utf8_encode($row['Title']));?>',
-              '<?php print_r(utf8_encode($row['Authors']));?>',
-              '<?php print_r(utf8_encode($row['Booktitle']));?>',
+              '<?php print_r($row['Title']);?>',
+              '<?php print_r($row['Authors']);?>',
+              '<?php print_r($row['Booktitle']);?>',
               '<?php print_r($row['Year']);?>',
-              '<?php print_r(utf8_encode($row['Editor']));?>',
+              '<?php print_r($row['Editor']);?>',
               '<?php print_r($row['Volume']);?>',
               '<?php print_r($row['Number']);?>',
               '<?php print_r($row['Series']);?>',
               '<?php print_r($row['Pages']);?>',
-              '<?php print_r(utf8_encode($row['Address']));?>',
+              '<?php print_r($row['Address']);?>',
               '<?php print_r($row['Month']);?>',
-              '<?php print_r(utf8_encode($row['Organization']));?>',
-              '<?php print_r(utf8_encode($row['Publisher']));?>',
+              '<?php print_r($row['Organization']);?>',
+              '<?php print_r($row['Publisher']);?>',
               '<?php print_r($row['Note']);?>'  
               ),<?php print_r($row['idInproceedings']."00");?>);" value="Vancouver">
               
               <input type="button" id="<?php print_r($row['idInproceedings']."2");?>" class = "publi-btn" onclick="testa('apa',new Inproceedings(
               '<?php print_r($row['idInproceedings']);?>',
-              '<?php print_r(utf8_encode($row['Title']));?>',
-              '<?php print_r(utf8_encode($row['Authors']));?>',
-              '<?php print_r(utf8_encode($row['Booktitle']));?>',
+              '<?php print_r($row['Title']);?>',
+              '<?php print_r($row['Authors']);?>',
+              '<?php print_r($row['Booktitle']);?>',
               '<?php print_r($row['Year']);?>',
-              '<?php print_r(utf8_encode($row['Editor']));?>',
+              '<?php print_r($row['Editor']);?>',
               '<?php print_r($row['Volume']);?>',
               '<?php print_r($row['Number']);?>',
               '<?php print_r($row['Series']);?>',
               '<?php print_r($row['Pages']);?>',
-              '<?php print_r(utf8_encode($row['Address']));?>',
+              '<?php print_r($row['Address']);?>',
               '<?php print_r($row['Month']);?>',
-              '<?php print_r(utf8_encode($row['Organization']));?>',
-              '<?php print_r(utf8_encode($row['Publisher']));?>',
+              '<?php print_r($row['Organization']);?>',
+              '<?php print_r($row['Publisher']);?>',
               '<?php print_r($row['Note']);?>'  
               ),<?php print_r($row['idInproceedings']."00");?>);" value="APA">
 
               <input type="button" id="<?php print_r($row['idInproceedings']."2");?>" class = "publi-btn" onclick="testa('abnt',new Inproceedings(
               '<?php print_r($row['idInproceedings']);?>',
-              '<?php print_r(utf8_encode($row['Title']));?>',
-              '<?php print_r(utf8_encode($row['Authors']));?>',
-              '<?php print_r(utf8_encode($row['Booktitle']));?>',
+              '<?php print_r($row['Title']);?>',
+              '<?php print_r($row['Authors']);?>',
+              '<?php print_r($row['Booktitle']);?>',
               '<?php print_r($row['Year']);?>',
-              '<?php print_r(utf8_encode($row['Editor']));?>',
+              '<?php print_r($row['Editor']);?>',
               '<?php print_r($row['Volume']);?>',
               '<?php print_r($row['Number']);?>',
               '<?php print_r($row['Series']);?>',
               '<?php print_r($row['Pages']);?>',
-              '<?php print_r(utf8_encode($row['Address']));?>',
+              '<?php print_r($row['Address']);?>',
               '<?php print_r($row['Month']);?>',
-              '<?php print_r(utf8_encode($row['Organization']));?>',
-              '<?php print_r(utf8_encode($row['Publisher']));?>',
+              '<?php print_r($row['Organization']);?>',
+              '<?php print_r($row['Publisher']);?>',
               '<?php print_r($row['Note']);?>'  
               ),<?php print_r($row['idInproceedings']."00");?>);" value="abnt">
 
@@ -262,8 +262,8 @@
         ?>
 
            <div class="publicacao">
-            <h2><?php print_r(utf8_encode($row['Title']));?></h2>
-            <p><?php print_r(utf8_encode($row['Authors']));?></p>
+            <h2><?php print_r($row['Title']);?></h2>
+            <p><?php print_r($row['Authors']);?></p>
             <a href="#">Resumo</a><br>
             <div class="btn-conteiner">
 
@@ -341,8 +341,8 @@
         ?>
         
         <div class="publicacao">
-            <h2><?php print_r(utf8_encode($row['Title']));?></h2>
-            <p><?php print_r(utf8_encode($row['Authors']));?></p>
+            <h2><?php print_r($row['Title']);?></h2>
+            <p><?php print_r($row['Authors']);?></p>
             <a href="#">Resumo</a><br>
             <div class="btn-conteiner">
 
