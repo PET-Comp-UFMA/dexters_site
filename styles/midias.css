@@ -1,4 +1,4 @@
-.midias{
+.noticias{
   padding: 100px;
   padding-top: 40px;
   border:none;
@@ -29,7 +29,7 @@
 }
 
 .textoMateria p {
-margin: 20px 0;
+  margin: 20px 0;
 }
 .botao{
   background: #6FA8B2;
@@ -52,15 +52,14 @@ margin: 20px 0;
 }
 
 @media (max-width:800px) {
-.noticias {
-  margin-bottom: 20px;
-  padding: 0;
-  width: 90%;
-}
+  .noticias {
+    margin-bottom: 20px;
+    padding: 0;
+    width: 90%;
+  }
 
-.materia {
-  flex-direction: column;
-  margin: 20px;
-  width: 100%;
-}
+  .materia {
+    flex-direction: column;
+    margin: 20px;
+  }
 }
